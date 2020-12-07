@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import PiggyBank from './PiggyBank'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello</h1>
+      <PiggyBank title="Piggy Bank" amount={30}/>  
+      {/* title is the prop that is defined in App. */}
+      {/* defining them here we don't have to hard code
+      so we could have two piggybanks next to each other and define what 
+      amounts are deposited. */}
     </div>
   );
 }
